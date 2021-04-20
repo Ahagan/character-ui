@@ -1,7 +1,7 @@
 {
-  "name": "project-template",
+  "name": "character-ui",
   "version": "1.0.0",
-  "description": "Project template with webpack, react, typescript, sass and mobx",
+  "description": "Create UI with feeling - Character UI: An atomic, component-based library",
   "proxy": "http://localhost:8080",
   "main": "index.js",
   "homepage": "http://ahagan.github.io/character-ui/",
@@ -17,9 +17,11 @@
   "keywords": [
     "react",
     "typescript",
-    "webpack"
+    "webpack",
+    "ui",
+    "framework"
   ],
-  "author": "Matt",
+  "author": "Adam Hagan",
   "license": "MIT",
   "dependencies": {
     "@blueprintjs/select": "^3.13.7",
