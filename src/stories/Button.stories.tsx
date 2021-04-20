@@ -11,27 +11,34 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args: ButtonProps) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
+  intent: 'primary',
   label: 'Button',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+  intent: 'secondary',
   label: 'Button',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
+export const HighPriority = Template.bind({});
+HighPriority.args = {
+  priority: 'high',
   label: 'Button',
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
+export const MediumPriority = Template.bind({});
+MediumPriority.args = {
+  priority: 'medium',
+  label: 'Button',
+};
+
+export const LowPriority = Template.bind({});
+LowPriority.args = {
+  priority: 'low',
   label: 'Button',
 };

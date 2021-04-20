@@ -1,0 +1,55 @@
+@import './../theme.scss';
+
+.cui-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  padding: 15px;
+
+  &.cui-intent-primary {
+    color: $text-color-light;
+    background-color: $primary;
+
+    &:focus {
+    }
+
+    &:active {
+    }
+
+    &:hover {
+      background-color: lighten($primary, 0.5);
+      transition: background-color 5s;
+    }
+  }
+
+  &.cui-intent-secondary {
+    color: $text-color;
+    background-color: $secondary;
+
+    &:focus {
+    }
+
+    &:active {
+    }
+
+    &:hover {
+      background-color: darken($secondary, 0.5);
+    }
+  }
+
+  &.cui-priority-medium {
+    width: 1em;
+  }
+
+  &.cui-priority-high {
+    width: 2em;
+  }
+
+  &.cui-priority-low {
+    width: 0.5em;
+  }
+}
